@@ -3,6 +3,8 @@ input.onButtonPressed(Button.A, function () {
         basic.showString("" + (value))
         basic.showString("=")
         basic.showNumber(trash_count[trash_types.indexOf(value)])
+        basic.clearScreen()
+        basic.pause(500)
     }
 })
 radio.onReceivedValue(function (name, value) {
